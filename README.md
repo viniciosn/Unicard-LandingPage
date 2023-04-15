@@ -6,8 +6,8 @@ Uma simples landing page de um cartão de crédito fictício feita para aprendiz
 
 ### Versão Web:
 
-![Versão Web da página](../../../../Users/viniciosnunes/Downloads/preview%20web.png)
+![Versão Web da Página](img/preview%20web.png)
 
 ### Versão Mobile:
 
-![Versão Mobile da Página](../../../../Users/viniciosnunes/Downloads/preview%20iphoneXR.png)
+![Versão Mobile da Página](img/preview%20iphoneXR.png)
