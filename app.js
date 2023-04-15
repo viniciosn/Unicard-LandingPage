@@ -1,5 +1,8 @@
 const input = document.querySelector("#input");
 const submitBtn = document.querySelector("#submitBtn");
+const menu = document.querySelector(".menu");
+const navMenu = document.querySelector(".nav");
+const bg = document.querySelector("#square");
 
 function validarEmail(email) {
   const regex = /^\S+@\S+\.\S+$/;
@@ -15,4 +18,10 @@ function validarEmail(email) {
 submitBtn.addEventListener("click", () => {
   validarEmail(input.value);
   input.value = "";
+});
+
+menu.addEventListener("click", () => {
+  bg.classList.toggle("removebg");
+  menu.classList.toggle("ativo");
+  navMenu.classList.toggle("ativo");
 });

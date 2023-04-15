@@ -73,6 +73,11 @@ header button:hover {
   opacity: 0.97;
 }
 
+header .menu {
+  cursor: pointer;
+  font-size: 30px;
+}
+
 main {
   display: flex;
   justify-content: space-around;
@@ -148,9 +153,38 @@ main .right img {
 }
 
 /* RESPONSIVIDADE */
+/* COMPUTERS */
+@media (min-width: 1024px) {
+  header .menu {
+    display: none;
+  }
+}
 
 /* TABLETS */
 @media (min-width: 768px) and (max-width: 1023px) {
+  .ativo {
+    right: 0;
+  }
+
+  header ul {
+    position: fixed;
+    right: -100%;
+    top: 149px;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    background: var(--white);
+    gap: 10px;
+    align-items: center;
+    transition: 0.3s;
+    z-index: 1;
+  }
+
+  header ul li {
+    padding-top: 30px;
+    margin-bottom: 50px;
+  }
+
   main .left h1 {
     margin-top: 30px;
     font-weight: 300;
@@ -172,6 +206,29 @@ main .right img {
 
 /* SMARTPHONES */
 @media (max-width: 767px) {
+  .ativo {
+    right: 0;
+  }
+
+  header ul {
+    position: fixed;
+    right: -100%;
+    top: 149px;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    background: var(--white);
+    gap: 10px;
+    align-items: center;
+    transition: 0.3s;
+    z-index: 1;
+  }
+
+  header ul li {
+    padding-top: 30px;
+    margin-bottom: 50px;
+  }
+
   main {
     flex-direction: column;
   }
@@ -206,5 +263,3 @@ main .right img {
     font-size: 13px;
   }
 }
-
-/* TODO: AJUSTAR O HEADER PARA AS TELAS DE TABLET E SMARTPHONES */
